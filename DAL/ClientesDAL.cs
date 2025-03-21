@@ -150,7 +150,7 @@ namespace DAL
                 da.Fill(dt);
                 return dt;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 throw new Exception("Erro servidor SQL: " + ex.Message);
             }
